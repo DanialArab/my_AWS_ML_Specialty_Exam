@@ -1,1 +1,2 @@
-# my_AWS_ML_Specialty_Exam
+# Exam date: ‎Sunday, November 26, 2023‎
+
