@@ -37,8 +37,28 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + 1/10th of the cost of traditional BI solutions
 + secure sharing and collaboration (StoryBoard)
 
+## Exam Readiness: AWS Certified Machine Learning - Specialty
+
+### Data Engineering
++ create data repositories for ML
++ identify and implement a data-ingestion solution
++ identify and implement a data-transformation solution
+
+some points:
++ You need a way to store your data in a **centralized repository**. **Data lake** is a key solution to this challenge. With a data lake, you can store structured and unstructured data.
++ AWS Lake Formation is your data lake solution, and Amazon S3 is the preferred storage option for data science processing on AWS
++ Use Amazon S3 storage classes to reduce the cost of data storage.
++ 
+
+
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
 
 Process Model: CRISP-DM on the AWS Stack (https://explore.skillbuilder.aws/learn/course/external/view/elearning/14575/process-model-crisp-dm-on-the-aws-stack-thai) 
+
+Exam Readiness: AWS Certified Machine Learning - Specialty
+
+Exam Prep Official Practice Question Set: AWS Certified Machine Learning - Specialty (MLS-C01 - English)
