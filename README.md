@@ -27,6 +27,17 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + schema-on-read
 + supports ANSI SQL operators and functions
 + serverless
+
+#### QuickSight
++ cloud-powered BI service
++ scale to hundreds of thousands of users
++ 1/10th of the cost of traditional BI solutions
++ secure sharing and collaboration (StoryBoard)
+
+
+
+
+
 References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
