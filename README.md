@@ -37,14 +37,8 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + 1/10th of the cost of traditional BI solutions
 + secure sharing and collaboration (StoryBoard)
 
-
-
-References:
+## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
 
 Process Model: CRISP-DM on the AWS Stack (https://explore.skillbuilder.aws/learn/course/external/view/elearning/14575/process-model-crisp-dm-on-the-aws-stack-thai) 
-
-|**Date (mm-dd)**| **Material studied**|
-| --  | -- |
-|25-8 | Preliminary and Data Eng. part |
