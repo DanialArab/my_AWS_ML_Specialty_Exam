@@ -8,12 +8,15 @@ CRISP-DM (Cross Industry Standard Process -  Data Mining)
 + Data understanding
 + 
 
-AWS Services for data understanding:
+### AWS Services for data understanding:
+In the past, data exploration often meant loading the dataset into redshift tableau or ec2 instances then diving into them through libraries such as ggplot or matplotlib. Today some of these tasks can be addressed in AWS without the need to load the data into a data warehouse or hadoop masternode or downloading the data onto your box. Here are the key servises helping us with data quality and visualizations:
+
 + Athena
 + QuickSight
 + Glue
 
-
+#### Athena:
++ 
 
 References:
 
