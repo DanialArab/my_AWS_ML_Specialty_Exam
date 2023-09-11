@@ -15,8 +15,13 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + QuickSight
 + Glue
 
-#### Athena:
-+ 
+#### Glue:
++ managed ETL service
++ includes three components:
+  	+ build data catalog
+  	+ generate and edit transformations
+  	+ schedule and run jobs
+
 
 References:
 
