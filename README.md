@@ -16,13 +16,17 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + Glue
 
 #### Glue:
-+ managed ETL service
++ managed serverless ETL service
 + includes three components:
   	+ build data catalog
   	+ generate and edit transformations
   	+ schedule and run jobs
-
-
+#### Athena:
++ interactive query service
++ runs interactive SQL queries on S3 data
++ schema-on-read
++ supports ANSI SQL operators and functions
++ serverless
 References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
