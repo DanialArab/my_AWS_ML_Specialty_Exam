@@ -44,7 +44,7 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + identify and implement a data-ingestion solution
 + identify and implement a data-transformation solution
 
-#### create data repositories for ML
+#### First domain in Data Engineering: create data repositories for ML
 
 + You need a way to store your data in a **centralized repository**. **Data lake** is a key solution to this challenge. With a data lake, you can store structured and unstructured data.
 + AWS Lake Formation is your data lake solution, and Amazon S3 is the preferred storage option for data science processing on AWS
@@ -59,26 +59,15 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 
 + Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
 
-
   + AWS Lake Formation
+  + Amazon S3 (as storage for a data lake)
+  + Amazon FSx for Lustre
+  + Amazon EFS
+  + Amazon EBS volumes
+  + Amazon S3 lifecycle configuration
+  + Amazon S3 data storage options
 
-
-Amazon S3 (as storage for a data lake)
-
-
-Amazon FSx for Lustre
-
-
-Amazon EFS
-
-
-Amazon EBS volumes
-
-
-Amazon S3 lifecycle configuration
-
-
-Amazon S3 data storage options
+#### Second domain in Data Engineering: Identify and implement a data ingestion solution
 
 
 ## References:
