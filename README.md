@@ -57,6 +57,30 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 
 ![](https://github.com/DanialArab/images/blob/main/AWS_ML_Specialty_Exam/comparison%20of%20training%20load%20time.PNG)
 
++ Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
+
+  + AWS Lake Formation
+
+
+Amazon S3 (as storage for a data lake)
+
+
+Amazon FSx for Lustre
+
+
+Amazon EFS
+
+
+Amazon EBS volumes
+
+
+Amazon S3 lifecycle configuration
+
+
+Amazon S3 data storage options
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
