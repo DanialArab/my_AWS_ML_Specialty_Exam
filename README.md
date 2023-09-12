@@ -69,6 +69,39 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 
 #### Second domain in Data Engineering: Identify and implement a data ingestion solution
 
+To use this data for ML, you need to ingest it into a service like Amazon S3
+
+One of the core benefits of a data lake solution is the ability to quickly and easily ingest multiple types of data. In some cases, your data will reside outside your Amazon S3 data lake solution, in databases, on-premises storage platforms, data warehouses, and other locations. To use this data for ML, you may need to ingest it into a storage service like Amazon S3.
+
++ **Batch and stream processing are two kinds of data ingestion**
+
+##### Batch processing
+
+Batch processing periodically collects and groups source data
+
+With batch processing, the ingestion layer periodically collects and groups source data and sends it to a destination like Amazon S3. You can process groups based on any logical ordering, the activation of certain conditions, or a simple schedule. Batch processing is typically used when there is no real need for real-time or near-real-time data, because it is generally easier and more affordably implemented than other ingestion options.
+
+Several services can help with batch processing into the AWS Cloud
+For batch ingestions to the AWS Cloud, you can use services like AWS Glue, an ETL (extract, transform, and load) service that you can use to categorize your data, clean it, enrich it, and move it between various data stores. AWS Database Migration Service (AWS DMS) is another service to help with batch ingestions. This service reads from historical data from source systems, such as relational database management systems, data warehouses, and NoSQL databases, at any desired interval. You can also automate various ETL tasks that involve complex workflows by using AWS Step Functions.
+
+##### Stream processing
+
+Stream processing manipulates and loads data as it’s recognized
+
+Stream processing, which includes real-time processing, involves no grouping at all. Data is sourced, manipulated, and loaded as soon as it is created or recognized by the data ingestion layer. This kind of ingestion is less cost-effective, since it requires systems to constantly monitor sources and accept new information. But you might want to use it for real-time predictions using an Amazon SageMaker endpoint that you want to show your customers on your website or some real-time analytics that require continually refreshed data, like real-time dashboards.
+
++ Amazon Kinesis is a platform for streaming data on AWS
+
+AWS recommends that you capture and ingest this fast-moving data using Amazon Kinesis, a platform for streaming data on AWS. Amazon Kinesis gives you the opportunity to build custom streaming data applications for specialized needs, and it offers several services focused on making it easier to load and analyze your streaming data.
+
++ Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+  
+  + Amazon Kinesis Data Streams
+  + Amazon Kinesis Data Firehose
+  + Amazon Kinesis Data Analytics
+  + Amazon Kinesis Video Streams
+  + AWS Glue
+  + Apache Kafka
 
 ## References:
 
