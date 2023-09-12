@@ -163,6 +163,16 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + Apache Spark and Amazon SageMaker
 + AWS Glue
 
+### EDA
+
++ Sanitize and prepare data for modeling
++ Perform feature engineering
++ Analyze and visualize data for ML
+
+
+
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
