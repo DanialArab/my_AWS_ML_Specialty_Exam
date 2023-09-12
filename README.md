@@ -1,5 +1,14 @@
 # Exam date: ‎Sunday, November 26, 2023‎
 
+1. [AWS free materials/courses](#1)
+   1. [Process Model: CRISP-DM on the AWS Stack](#2)
+   2. [Exam Readiness: AWS Certified Machine Learning - Specialty](#3)
+  
+
+<a name="1"></a>
+## AWS free materials/courses
+
+<a name="2"></a>
 ## Process Model: CRISP-DM on the AWS Stack
 
 CRISP-DM (Cross Industry Standard Process -  Data Mining)
@@ -37,6 +46,7 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 + 1/10th of the cost of traditional BI solutions
 + secure sharing and collaboration (StoryBoard)
 
+<a name="3"></a>
 ## Exam Readiness: AWS Certified Machine Learning - Specialty
 
 ### Data Engineering
