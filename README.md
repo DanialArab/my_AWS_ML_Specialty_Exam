@@ -94,6 +94,26 @@ Stream processing, which includes real-time processing, involves no grouping at 
 
 AWS recommends that you capture and ingest this fast-moving data using Amazon Kinesis, a platform for streaming data on AWS. Amazon Kinesis gives you the opportunity to build custom streaming data applications for specialized needs, and it offers several services focused on making it easier to load and analyze your streaming data.
 
+Amazon Kinesis:
++ Amazon Kinesis Video Streams
++ Amazon Kinesis Data Streams
++ Amazon Kinesis Data Firehose
++ Amazon Kinesis Data Analytics
+
+  
+###### Amazon Kinesis Video Streams
+You can use Amazon Kinesis Video Streams to ingest and analyze video and audio data. For example, a leading home security provider ingests audio and video from their home security cameras using Kinesis Video Streams. They then attach their own custom ML models running in Amazon SageMaker to detect and analyze objects to build richer user experiences.
+
+###### Amazon Kinesis Data Streams
+With Amazon Kinesis Data Streams, you can use the Kinesis Producer Library (KPL), an intermediary between your producer application code and the Kinesis Data Streams API data, to write to a Kinesis data stream. With the Kinesis Client Library (KCL), you can build your own application to preprocess the streaming data as it arrives and emit the data for generating incremental views and downstream analysis.
+
+###### Amazon Kinesis Data Firehose
+As data is ingested in real time, you can use Amazon Kinesis Data Firehose to easily batch and compress the data to generate incremental views. Kinesis Data Firehose also allows you to execute custom transformation logic using AWS Lambda before delivering the incremental view to Amazon S3.
+
+###### Amazon Kinesis Data Analytics
+Amazon Kinesis Data Analytics provides the easiest way to process and transform the data that is streaming through Kinesis Data Streams or Kinesis Data Firehose using SQL. This lets you gain actionable insights in near-real time from the incremental stream before storing it in Amazon S3.
+
+
 + Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
   
   + Amazon Kinesis Data Streams
@@ -102,6 +122,12 @@ AWS recommends that you capture and ingest this fast-moving data using Amazon Ki
   + Amazon Kinesis Video Streams
   + AWS Glue
   + Apache Kafka
+
+
+#### Third domain in Data Engineering: Identify and implement a data transformation solution
+
+HERE 
+
 
 ## References:
 
