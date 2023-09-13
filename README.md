@@ -241,6 +241,10 @@ Up to now, the focus has been exclusively on Amazon SageMaker built-in algorithm
 + Use your own custom algorithm and put the code together as a Docker image
 + Subscribe to an algorithm from AWS Marketplace
 
+### Train ML models
+
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
