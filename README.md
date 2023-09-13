@@ -197,7 +197,13 @@ So how do we do it, exactly? How can we align different features into the same s
    + Robust scaling
    + Normalizer
 
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
 
++ Scaling
++ Normalizing
++ Dimensionality reduction
++ Date formatting
++ One-hot encoding
 
 
 
