@@ -317,6 +317,9 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + Specificity
 + Neural network functions like Softmax for the last layer
 
+**Amazon SageMaker DeepAR**:
+The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) **time series using recurrent neural networks (RNN).**
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
