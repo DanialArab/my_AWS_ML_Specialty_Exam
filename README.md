@@ -208,10 +208,21 @@ Topics related to this subdomain: Here are some topics you may want to study for
 
 ### Modeling 
 
-HERE
++ Frame business problems as ML problems
++ Select the appropriate model(s) for an ML problem
++ Train ML models
++ Perform hyperparameter optimization
++ Evaluate ML models
 
+#### Amazon SageMaker built-in algorithms for NLP and CV
 
+Algorithms for natural language processing (NLP)
 
+There are Amazon SageMaker built-in algorithms for natural language processing:
+
++ BlazingText algorithm provides highly optimized implementations of the Word2vec and text classification algorithms.
++ Sequence2sequence is a supervised learning algorithm where the input is a sequence of tokens (for example, text, audio) and the output generated is another sequence of tokens.
++ Object2Vec generalizes the well-known Word2Vec embedding technique for words that are optimized in the Amazon SageMaker BlazingText algorithm.
 
 ## References:
 
