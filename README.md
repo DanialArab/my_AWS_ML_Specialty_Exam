@@ -173,10 +173,10 @@ Topics related to this subdomain: Here are some topics you may want to study for
 
 + Dataset generation
 
-      + Amazon SageMaker Ground Truth
-      + Amazon Mechanical Turk 
-      + Amazon Kinesis Data Analytics
-      + Amazon Kinesis Video Streams
+   + Amazon SageMaker Ground Truth
+   + Amazon Mechanical Turk 
+   + Amazon Kinesis Data Analytics
+   + Amazon Kinesis Video Streams
 
 + Data augmentation
 + Descriptive statistics
