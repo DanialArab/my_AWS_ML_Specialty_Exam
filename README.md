@@ -250,6 +250,10 @@ K-fold cross-validation is a common validation method. In k-fold cross-validatio
 
 For instance, performing a 5-fold cross-validation generates four models, four datasets to train the models, four datasets to evaluate the models, and four evaluations, one for each model. In a 5-fold cross-validation for a binary classification problem, each of the evaluations reports an area under curve (AUC) metric. You can get the overall performance measure by computing the average of the four AUC metrics.
 
++ Other cross-validation methods
+
+You can use a host of other cross-validation methods, depending on your requirements. If you have a **small dataset, for instance, consider Leave-one-out cross-validation** or, as mentioned above, K-fold cross-validation. Or you might use the **Stratified K-fold cross-validation** when you have **imbalanced data**. Just remember that these techniques increase the computational power needed during training.
+
 
 
 ## References:
