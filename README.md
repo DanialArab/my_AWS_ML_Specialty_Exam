@@ -254,6 +254,8 @@ For instance, performing a 5-fold cross-validation generates four models, four d
 
 You can use a host of other cross-validation methods, depending on your requirements. If you have a **small dataset, for instance, consider Leave-one-out cross-validation** or, as mentioned above, K-fold cross-validation. Or you might use the **Stratified K-fold cross-validation** when you have **imbalanced data**. Just remember that these techniques increase the computational power needed during training.
 
++ **Cross-validation techniques increase the computational power needed for the training**
+
 
 
 ## References:
