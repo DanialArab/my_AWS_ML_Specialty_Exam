@@ -206,6 +206,9 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + One-hot encoding
 
 
+### Modeling 
+
+HERE
 
 
 
