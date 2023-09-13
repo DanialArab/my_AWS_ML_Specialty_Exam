@@ -232,6 +232,15 @@ There are Amazon SageMaker built-in algorithms for computer vision:
 + Object detection algorithm detects and classifies objects in images using a single deep neural network. It is a supervised learning algorithm that takes images as input and identifies all instances of objects within the image scene. The object is categorized into one of the classes in a specified collection with a confidence score that it belongs to the class. Its location and scale in the image are indicated by a rectangular bounding box.
 + Semantic segmentation algorithm tags every pixel in an image with a class label from a predefined set of classes.
 
+#### Other options for training algorithms
+
+Up to now, the focus has been exclusively on Amazon SageMaker built-in algorithms, but there are other options for training algorithms:
+
++ Use Apache Spark with Amazon SageMaker 
++ Submit custom code to train a model with a deep learning framework like TensorFlow or Apache MXNet
++ Use your own custom algorithm and put the code together as a Docker image
++ Subscribe to an algorithm from AWS Marketplace
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
