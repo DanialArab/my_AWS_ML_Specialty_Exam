@@ -256,6 +256,25 @@ You can use a host of other cross-validation methods, depending on your requirem
 
 + **Cross-validation techniques increase the computational power needed for the training**
 
+#### Creating a training job in Amazon SageMaker
+
+With an algorithm chosen and your data split up, you can now run the actual training job. Creating a training job in Amazon SageMaker typically requires the following steps:
+
++ S3 bucket training data (we need to provide the URLs of the S3 buckets for the training data and also for the model output or artifacts where we want to store them 
++ We need to specify the compute resources that we want Amazon Sagemaker to use for training. compute resources are ML compute instances that are managed by SageMaker
++ We need to specify the Amazon Elastic Container Registry path where the training code is stored 
+
+After you create the training job, Amazon SageMaker launches the compute instances and uses the training code and the training dataset to train the model. It saves the resulting model artifacts and other output in the Amazon S3 bucket you specified for that purpose.
+
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
++ Amazon SageMaker workflow for training jobs
++ Running a training job using containers
++ Build your own containers
++ P3 instances
++ Components of an ML training job for deep learning
+
+P3 instances are part of the AWS EC2 (Elastic Compute Cloud) family and are designed for high-performance machine learning (ML), deep learning (DL), and artificial intelligence (AI) workloads. They are optimized for GPU-intensive tasks.
 
 
 ## References:
