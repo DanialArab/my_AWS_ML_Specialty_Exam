@@ -320,6 +320,10 @@ Topics related to this subdomain: Here are some topics you may want to study for
 **Amazon SageMaker DeepAR**:
 The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) **time series using recurrent neural networks (RNN).**
 
+### ML Implementation and Operations
+
+here
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
