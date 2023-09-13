@@ -276,6 +276,14 @@ Topics related to this subdomain: Here are some topics you may want to study for
 
 P3 instances are part of the AWS EC2 (Elastic Compute Cloud) family and are designed for high-performance machine learning (ML), deep learning (DL), and artificial intelligence (AI) workloads. They are optimized for GPU-intensive tasks.
 
+###  Perform hyperparameter optimization
+
+There are different categories of hyperparameters: 
+
++ Model hyperparameters: they define the model itself - attributes of a NN architecture like filter size, pooling, stride, padding
++ Optimizer hyperparameters: are related to how the model learns the patterns based on data and are used for an NN model. These types of hyperparameters include optimizers like gradient descent and stochastic gradient descent or even optimizers using momentum like Adam or initializing the parameter weights using methods like Xavier initialization or He initialization
++ Data hyperparameters: are related to the attributes of the data, often used when you don't have enough data or enough variation in data - Data augmentation techniques like cropping, resizing 
+
 
 ## References:
 
