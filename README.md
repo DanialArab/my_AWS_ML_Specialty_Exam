@@ -308,6 +308,15 @@ Topics related to this subdomain: Here are some topics you may want to study for
    + Dropout
   +  L1/L2
 
+### Evaluate ML models
+
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
++ Metrics for regression: sum of squared errors, RMSE
++ Sensitivity
++ Specificity
++ Neural network functions like Softmax for the last layer
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
