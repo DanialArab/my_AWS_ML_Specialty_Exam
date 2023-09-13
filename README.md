@@ -169,8 +169,19 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + Perform feature engineering
 + Analyze and visualize data for ML
 
-here Standardize language and grammar
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain
 
++ Dataset generation
+
+      + Amazon SageMaker Ground Truth
+      + Amazon Mechanical Turk 
+      + Amazon Kinesis Data Analytics
+      + Amazon Kinesis Video Streams
+
++ Data augmentation
++ Descriptive statistics
++ Informative statistics
++ Handling missing values and outliers
 
 
 ## References:
