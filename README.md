@@ -49,7 +49,7 @@ In the past, data exploration often meant loading the dataset into redshift tabl
 <a name="3"></a>
 ## Exam Readiness: AWS Certified Machine Learning - Specialty
 
-### Data Engineering
+### FIRST DOMAIN: Data Engineering
 + create data repositories for ML
 + identify and implement a data-ingestion solution
 + identify and implement a data-transformation solution
@@ -163,7 +163,7 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + Apache Spark and Amazon SageMaker
 + AWS Glue
 
-### EDA
+### SECOND DOMAIN: EDA
 
 + Sanitize and prepare data for modeling
 + Perform feature engineering
@@ -206,7 +206,7 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + One-hot encoding
 
 
-### Modeling 
+### THIRD DOMAIN: Modeling 
 
 + Frame business problems as ML problems
 + Select the appropriate model(s) for an ML problem
@@ -320,7 +320,7 @@ Topics related to this subdomain: Here are some topics you may want to study for
 **Amazon SageMaker DeepAR**:
 The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) **time series using recurrent neural networks (RNN).**
 
-### ML Implementation and Operations
+### FOURTH DOMAIN: ML Implementation and Operations
 
 here
 
