@@ -224,6 +224,14 @@ There are Amazon SageMaker built-in algorithms for natural language processing:
 + **Sequence2sequence** is a supervised learning algorithm where the input is a sequence of tokens (for example, text, audio) and the output generated is another sequence of tokens.
 + **Object2Vec** generalizes the well-known Word2Vec embedding technique for words that are optimized in the Amazon SageMaker BlazingText algorithm.
 
+#### Algorithms for computer vision (CV)
+
+There are Amazon SageMaker built-in algorithms for computer vision:
+
++ Image classification is a supervised learning algorithm used to classify images.
++ Object detection algorithm detects and classifies objects in images using a single deep neural network. It is a supervised learning algorithm that takes images as input and identifies all instances of objects within the image scene. The object is categorized into one of the classes in a specified collection with a confidence score that it belongs to the class. Its location and scale in the image are indicated by a rectangular bounding box.
++ Semantic segmentation algorithm tags every pixel in an image with a class label from a predefined set of classes.
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
