@@ -243,6 +243,15 @@ Up to now, the focus has been exclusively on Amazon SageMaker built-in algorithm
 
 ### Train ML models
 
++ Use validation dataset to estimate model's performance while tunning its hyperparameters and/or to compare performance across different models you may be considering 
++ K-fold cross-validation is a common validation method
+
+K-fold cross-validation is a common validation method. In k-fold cross-validation, you split the input data into k subsets of data (also known as folds). You train your models on all but one (k-1) of the subsets, and then evaluate them on the subset that was not used for training. This process is repeated k times, with a different subset reserved for evaluation (and excluded from training) each time. 
+
+ 
+
+For instance, performing a 5-fold cross-validation generates four models, four datasets to train the models, four datasets to evaluate the models, and four evaluations, one for each model. In a 5-fold cross-validation for a binary classification problem, each of the evaluations reports an area under curve (AUC) metric. You can get the overall performance measure by computing the average of the four AUC metrics.
+
 
 
 ## References:
