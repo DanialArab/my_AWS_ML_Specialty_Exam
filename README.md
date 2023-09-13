@@ -284,6 +284,29 @@ There are different categories of hyperparameters:
 + Optimizer hyperparameters: are related to how the model learns the patterns based on data and are used for an NN model. These types of hyperparameters include optimizers like gradient descent and stochastic gradient descent or even optimizers using momentum like Adam or initializing the parameter weights using methods like Xavier initialization or He initialization
 + Data hyperparameters: are related to the attributes of the data, often used when you don't have enough data or enough variation in data - Data augmentation techniques like cropping, resizing 
 
+Traditionally, this was done manually: someone who has domain experience related to that hyperparameter and the use case would manually select the hyperparameters based on their intuition and experience. Then they would train the model and score it on the validation data. This process would be repeated over and over again until satisfactory results are achieved. 
+
+Needless to say, this is not always the most thorough and efficient way of tuning your hyperparameters. As a result, several other methods for hyperparameter tuning have been developed. Alternatively, Amazon SageMaker offers automated hyperparameter tuning
+
+Then there’s automated hyperparameter tuning, which uses methods like gradient descent, Bayesian optimization, and evolutionary algorithms to conduct a guided search for the best hyperparameter settings.
+
+Amazon SageMaker lets you perform automated hyperparameter tuning. Amazon SageMaker automatic model tuning, also known as hyperparameter tuning, finds the best version of a model by running many training jobs on your dataset using the algorithm and ranges of hyperparameters that you specify. It then chooses the hyperparameter values that result in a model that performs the best, as measured by a metric that you choose.
+
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
+
++ Amazon SageMaker hyperparameter tuning jobs
++ Common hyperparameters to tune:
+
+   + Momentum
+   + Optimizers
+   + Activation functions
+   + Dropout
+   + Learning rate
+
++ Regularization:
+   + Dropout
+  +  L1/L2
 
 ## References:
 
