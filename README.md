@@ -322,7 +322,82 @@ The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algor
 
 ### FOURTH DOMAIN: ML Implementation and Operations
 
-here
+This domain covers four subdomains:
+
++ Building ML solutions for performance, availability, scalability, resiliency, and fault tolerance
++ Recommending and implementing the appropriate ML services and features for a given problem
++ Applying basic AWS security practices to ML solutions
++ Deploying and operationalizing ML solutions
+
+#### Domain 4.1: Build ML solutions for performance, availability, scalability, resiliency, and fault tolerance
+
+Part of this domain is focused on deploying your ML solution into production. But before you walk through the steps of model deployment, you have to ensure your solution is **designed to effectively deal with operational failure**. This subdomain focuses on best practices for how to do this in the context of machine learning.
+
+##### High availability and fault tolerance
+
+At the heart of designing for failure are two concepts known as high availability and fault tolerance.
+
+In a highly available solution, the system will continue to function even when any component of the architecture stops working. A key aspect of high availability is fault tolerance, which, when built into an architecture, ensures that applications will continue to function without degradation in performance, despite the complete failure of any component of the architecture.
+
+##### One method of achieving high availability and fault tolerance is loose coupling
+
+With a loosely coupled, distributed system, the failure of one component can be managed in between your application tiers so that the faults do not spread beyond that single point. Loose coupling is often achieved by making sure application components are independent of each other. For example, you should always decouple your storage layer with your compute layer because a training job only requires minimal time, but storing data is permanent. Decoupling helps turn off the compute resources when they are not needed.
+
+**Tightly coupled**:
+   + More interdependency
+  +  More coordination
+   + More information
+
+**Loosely coupled**:
+   + Less interdependency
+   + Less coordination
+   + Less information
+
+**Queues are used in loose coupling to pass messages between components**
+
+In a general architecture, you can use a queue service like Amazon SQS or workflow service like AWS Step Functions to create a workflow between various components.
+
+**Amazon CloudWatch helps you monitor your system**
+
+Services like Amazon CloudWatch help you monitor your system while storing all the logs and operational metrics separately from the actual implementation and code for training and testing your ML models. In this example, Amazon CloudWatch is used to keep a history of the model metrics for a specific amount of time, visualize model performance metrics, and create a CloudWatch dashboard. Amazon SageMaker provides out-of-the-box integration with Amazon CloudWatch, which collects near-real-time utilization metrics for the training job instance, such as CPU, memory, and GPU utilization of the training job container.
+
+**AWS CloudTrail captures API calls and related events**
+
+AWS CloudTrail captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred.
+
+**You can design for the failure of any individual component by leveraging key AWS services and features**
++ AWS Glue and Amazon EMR:
+
+You should decouple your ETL process from the ML pipeline. The compute power needed for ML isn’t the same as what you’d need for an ETL process—they have very different requirements. 
+
+   + An ETL process needs to read in files from multiple formats, transform them as needed, and then write them back to a persistent storage. Keep in mind that reading and writing takes a lot of memory and disk I/O, so when you decouple your ETL process, use a framework like Apache Spark, which can handle large amounts of data easily for ETL.
+   + Training, on the other hand, may require GPUs which are much more suited to handle the training requirements than CPUs. However, GPUs are less cost-effective to keep running when a model is not being trained. So you can make use of this decoupled architecture by simply using an ETL service like AWS Glue or Amazon EMR, which use Apache Spark for your ETL jobs and Amazon SageMaker to train, test, and deploy your models.
+
++ Amazon SageMaker Endpoints
+
+To ensure a highly available ML serving endpoint, deploy Amazon SageMaker endpoints backed by multiple instances across Availability Zones. 
+
++ Amazon SageMaker
+
+Amazon SageMaker makes it easy to containerize ML models for both training and inference. In doing so, you can create ML models made up of loosely coupled, distributed services that can be placed on any number of platforms, or close to the data that the applications are analyzing.
+
++ AWS Auto Scaling
+
+Use AWS Auto Scaling to build scalable solutions by configuring automatic scaling for the AWS resources such as Amazon SageMaker endpoints that are part of your application in response to the changes in traffic to your application.
+
+With AWS Auto Scaling, you configure and manage scaling for your resources through a scaling plan. The scaling plan uses dynamic scaling and predictive scaling to automatically scale your application’s resources. 
+
+This ensures that you add the required computing power to handle the load on your application, and then remove it when it's no longer required. The scaling plan lets you choose scaling strategies to define how to optimize your resource utilization. You can optimize for availability, for cost, or a balance of both. 
+
+As you increase the number of concurrent prediction requests, at some point the endpoint responds more slowly and eventually errors out for some requests. Automatically scaling the endpoint avoids these problems and improves prediction throughput. When the endpoint scales out, Amazon SageMaker automatically spreads instances across multiple Availability Zones. This provides Availability Zone-level fault tolerance and protects from an individual instance failure.
+
+If the endpoint has only a moderate load, you can run it on a single instance and still get good performance. Use automatic scaling to ensure high availability during traffic fluctuations without having to constantly provision for peak traffic. For production workloads, use at least two instances. Because Amazon SageMaker automatically spreads the endpoint instances across multiple Availability Zones, a minimum of two instances ensures high availability and provides individual fault tolerance.
+
+To determine the scaling policy for automatic scaling in Amazon SageMaker, test for how much load (RPS) the endpoint can sustain. Then configure automatic scaling and observe how the model behaves when it scales out. Expected behavior is lower latency and fewer or no errors with automatic scaling.
+
+**Designing highly available and fault-tolerant ML architectures**
+
+HERE
 
 ## References:
 
