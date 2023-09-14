@@ -478,7 +478,9 @@ Network interfaces allow your model containers to connect to resources in your V
 
 ##### Amazon SageMaker also encrypts data at rest
 
-HERE 
+Along with IAM roles to prevent unwanted access, Amazon SageMaker also encrypts data at rest with either AWS Key Management Service (AWS KMS) or a transient key if the key isn’t provided and in transit with TLS 1.2 encryption for the all other communication. Users can connect to the notebook instances using an AWS SigV4 authentication so that any connection remains secure. Any API call you make is executed over an SSL connection.
+
+ 
 
 ## References:
 
