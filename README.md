@@ -493,6 +493,34 @@ You can protect data at rest in Amazon S3 by using three different modes of serv
 + SSE-C: requires that you manage the encryption key 
 + SSE-S3: requires Amazon S3 to manage the data and master encryption keys 
 
+##### Below is a summary of security features integrated with Amazon SageMaker
+
++ Authentication
+   + IAM federation
+
++ Gaining insight
+   + Restrict access by IAM policy and condition keys
+
++ Audit
+   + API logs to AWS CloudTrail - exception of InvokeEndpoint
+
++ Data protection at rest
+   + AWS KMS-based encryption for:
+
+      + Notebooks
+      + Training jobs
+      +Amazon S3 location to store modelsEndpoint
+
++ Data protection at motion
+   + HTTPS for: 
+
+      + API/console
+      + Notebooks
+      + VPC-enabled
+      + Interface endpoint
+      + Limit by IPTraining jobs/endpoints
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
