@@ -464,8 +464,6 @@ This section will provide you with an overview of those security practices by wa
 
 Security is intrinsically built in to Amazon SageMaker. With training data, Amazon SageMaker gets data from Amazon S3, passes that data to the training job environment, and then passes the generated model back to Amazon S3. This is done in the customer’s account and is not saved in the Amazon SageMaker managed account. If you want to deploy the model, it is loaded into instances that are serving the model so that you can call the endpoint for prediction. 
 
-
-
 To keep this process secure, Amazon SageMaker supports IAM role-based access to secure your artifacts in Amazon S3, where you can set different roles for different parts of the process. For instance, a certain data scientist can have access to PII information in the raw data bucket, but the DevOps engineer only has access to the trained model itself. This approach helps you restrict access to the user(s) who need it. For the data scientist, you can use a notebook execution role for creating and deleting notebooks, and a training job execution role to run the training jobs. 
 
 ##### You can launch an Amazon SageMaker instance in a customer-managed VPC
@@ -480,7 +478,14 @@ Network interfaces allow your model containers to connect to resources in your V
 
 Along with IAM roles to prevent unwanted access, Amazon SageMaker also encrypts data at rest with either AWS Key Management Service (AWS KMS) or a transient key if the key isn’t provided and in transit with TLS 1.2 encryption for the all other communication. Users can connect to the notebook instances using an AWS SigV4 authentication so that any connection remains secure. Any API call you make is executed over an SSL connection.
 
- 
+##### You can use encrypted Amazon S3 buckets for model artifacts and data
+
+Similar to encrypting data in Amazon SageMaker, you can use encrypted Amazon S3 buckets for model artifacts and data, and pass an AWS KMS key to Amazon SageMaker notebooks, training jobs, hyperparameter tuning jobs, batch transform jobs, and endpoints, to encrypt the attached ML storage volume. If you do not specify an AWS KMS key, Amazon SageMaker encrypts storage volumes with a transient key. A transient key is discarded immediately after it is used to encrypt the storage volume.
+
+AWS KMS gives you centralized control over the encryption keys used to protect your data. You can create, import, rotate, disable, delete, define usage policies for, and audit the use of encryption keys used to encrypt your data. You specify a KMS key ID when you create Amazon SageMaker notebook instances, training jobs, or endpoints. 
+
+The attached ML storage volumes are encrypted with the specified key. You can specify an output Amazon S3 bucket for training jobs that is also encrypted with a key managed with AWS KMS, and pass in the KMS key ID for storing the model artifacts in that output S3 bucket.
+
 
 ## References:
 
