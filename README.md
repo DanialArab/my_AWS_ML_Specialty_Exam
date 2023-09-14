@@ -420,6 +420,24 @@ The stack for Amazon machine learning has three tiers:
 
 ![](https://github.com/DanialArab/images/blob/main/AWS_ML_Specialty_Exam/AWS%20ML%20three%20tiers.PNG)
 
+**ML frameworks + infrastructure**
+
+The bottom tier of the stack is for expert ML practitioners who work at the framework level. To work with these frameworks, you are comfortable building, training, tuning, and deploying ML models on the metal, so to speak. ML frameworks are the foundation from which innovation in ML is designed. The focus here is on making it easier for you to connect more broadly to the AWS ecosystem, whether that’s about pulling in IoT data from AWS IOT Greengrass, accessing state-of-the art chips (P3), or leveraging elastic inference. 
+
+
+**The vast majority of deep learning and ML in the cloud is done on P3 instances in AWS**. You can use whichever ML deep learning framework you like, but some popular options are TensorFlow, MXNet, and PyTorch, which are all supported on AWS.
+
+**ML services**
+
+While there is a lot of activity at this bottom layer, the reality is that there just aren't that many expert ML practitioners out there. 
+
+That’s why the second tier on the stack, platform services, was created. At the heart of this tier is Amazon SageMaker, which we’ve discussed. While ML can provide tremendous business value, today the process for authoring, training, and deploying ML models has many challenges. Why? Because collecting, cleaning, and formatting the training data can be time-consuming, particularly if you’re not using the latest tools. 
+
+Once the training data set is created, you need to ensure that your algorithms and compute environments can quickly handle the scale of the data needed. Simply figuring out how to train increasingly complex models on increasingly larger data sets can be a blocker, and companies that frequently train models often have dedicated teams just to manage the training environments. 
+
+Once you’re ready to move to production, a new set of challenges can come up. Often, the person developing the model hands it off to another team to begin the tedious process of figuring out how to run the model at scale. This involves an entirely different set of computer science challenges related to efficiently operating high-scale distributed systems. If you don’t do this routinely, it can be a slow and cumbersome process. Amazon SageMaker was designed to address many of these fundamental challenges.
+
+
 
 ## References:
 
