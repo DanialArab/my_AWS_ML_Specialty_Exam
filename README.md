@@ -509,7 +509,7 @@ You can protect data at rest in Amazon S3 by using three different modes of serv
 
       + Notebooks
       + Training jobs
-      +Amazon S3 location to store modelsEndpoint
+      + Amazon S3 location to store modelsEndpoint
 
 + Data protection at motion
    + HTTPS for: 
