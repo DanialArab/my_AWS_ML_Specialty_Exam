@@ -410,6 +410,17 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + Amazon CloudWatch
 + AWS CloudTrail
 
+#### Domain 4.2: Recommend and implement the appropriate ML services and features for a given problem
+
+Most of the exam domains have focused on at least one phase of the ML pipeline and, where applicable, the AWS services needed to perform related tasks and create relevant solutions. For instance, **AWS Glue, Amazon EMR, and Amazon Kinesis were discussed as services used for data ingestion and transformation, while Amazon SageMaker was discussed as the service to use for model building, training, tuning, and evaluation.**
+
+This particular subdomain, however, pivots away from the ML pipeline and focuses more generally on the entire ecosystem of AWS ML services and their use cases.
+
+The stack for Amazon machine learning has three tiers:
+
+![](https://github.com/DanialArab/images/blob/main/AWS_ML_Specialty_Exam/AWS%20ML%20three%20tiers.PNG)
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
