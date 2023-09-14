@@ -437,7 +437,9 @@ Once the training data set is created, you need to ensure that your algorithms a
 
 Once you’re ready to move to production, a new set of challenges can come up. Often, the person developing the model hands it off to another team to begin the tedious process of figuring out how to run the model at scale. This involves an entirely different set of computer science challenges related to efficiently operating high-scale distributed systems. If you don’t do this routinely, it can be a slow and cumbersome process. Amazon SageMaker was designed to address many of these fundamental challenges.
 
+**AI services**
 
+AWS services in the top tier are for customers who really don't want to deal with building and training their ML models. All of that has been abstracted away, leaving you with easy-to-use services designed to help you deal with common ML problems in various domains, like computer vision, NLP, and time series forecasting.  
 
 ## References:
 
