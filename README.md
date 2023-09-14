@@ -541,7 +541,28 @@ Topics related to this subdomain: Here are some topics you may want to study for
 
 #### Domain 4.4: Deploy and operationalize ML solutions
 
+The ML model you develop is one component in a larger software ecosystem. All the usual software engineering and management practices must still be applied, including security, logging and monitoring, task management, API versioning, and so on. This ecosystem must be managed using cloud and software engineering practices, including:
 
+   + End-to-end and A/B testing
+   + API versioning, if multiple versions of the model are used
+   + Reliability and failover
+   + Ongoing maintenance
+   + Cloud infrastructure best practices, such as continuous integration/continuous deployment (CI/CD)
+
+##### Deploying a model using Amazon SageMaker hosting services is a three-step process
+
+###### Create a model in Amazon SageMaker
+You need:
+
+   + The Amazon S3 path where the model artifacts are stored 
+   + The Docker registry path for the image that contains the inference code 
+   + A name that you can use for subsequent deployment steps
+
+###### Create an endpoint configuration for an HTTPS endpoint
+You need:
+
+   + The name of one or more models in production variants
+   +The ML compute instances that you want Amazon SageMaker to launch to host each production variant. When hosting models in production, you can configure the endpoint to elastically scale the deployed ML compute instances. For each production variant, you specify the number of ML compute instances that you want to deploy. When you specify two or more instances, Amazon SageMaker launches them in multiple Availability Zones. This ensures continuous availability. Amazon SageMaker manages deploying the instances.
 
 
 ## References:
