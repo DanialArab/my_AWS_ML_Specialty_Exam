@@ -441,6 +441,45 @@ Once you’re ready to move to production, a new set of challenges can come up. 
 
 AWS services in the top tier are for customers who really don't want to deal with building and training their ML models. All of that has been abstracted away, leaving you with easy-to-use services designed to help you deal with common ML problems in various domains, like computer vision, NLP, and time series forecasting.  
 
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
++ Amazon SageMaker Spark containers
++ Amazon SageMaker build your own containers
++ Amazon AI services 
+
+   + Amazon Translate
+   + Amazon Lex
+   + Amazon Polly
+   + Amazon Transcribe
+   + Amazon Rekognition
+   + Amazon Comprehend
+
+#### Domain 4.3: Apply Basic AWS security practices to ML solutions
+
+For any solution you build, including an ML solution, you need to make sure it and your data are secure. Applying security practices to your ML solutions in the cloud is what this subdomain is centered around.
+
+This section will provide you with an overview of those security practices by walking you through an example involving Amazon SageMaker. 
+
+##### Security is intrinsically built into Amazon SageMaker
+
+Security is intrinsically built in to Amazon SageMaker. With training data, Amazon SageMaker gets data from Amazon S3, passes that data to the training job environment, and then passes the generated model back to Amazon S3. This is done in the customer’s account and is not saved in the Amazon SageMaker managed account. If you want to deploy the model, it is loaded into instances that are serving the model so that you can call the endpoint for prediction. 
+
+
+
+To keep this process secure, Amazon SageMaker supports IAM role-based access to secure your artifacts in Amazon S3, where you can set different roles for different parts of the process. For instance, a certain data scientist can have access to PII information in the raw data bucket, but the DevOps engineer only has access to the trained model itself. This approach helps you restrict access to the user(s) who need it. For the data scientist, you can use a notebook execution role for creating and deleting notebooks, and a training job execution role to run the training jobs. 
+
+##### You can launch an Amazon SageMaker instance in a customer-managed VPC
+
+When you create an Amazon SageMaker notebook instance, you can launch the instance with or without your Virtual Private Cloud (VPC) attached. When launched with your VPC attached, the notebook can either be configured with optional direct internet access.
+
+You specify your private VPC configuration when you create a model by specifying subnets and security groups. When you specify the subnets and security groups, Amazon SageMaker creates elastic network interfaces that are associated with your security groups in one of the subnets. 
+
+Network interfaces allow your model containers to connect to resources in your VPC. For instances with direct internet access, Amazon SageMaker provides a network interface that allows for the notebook to talk to the internet through a VPC managed by the service. If you disable direct internet access, the notebook instance won't be able to train or host models unless your VPC has an interface endpoint (PrivateLink) or a NAT gateway and your security groups allow outbound connections.
+
+##### Amazon SageMaker also encrypts data at rest
+
+HERE 
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
