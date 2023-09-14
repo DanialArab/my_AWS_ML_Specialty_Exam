@@ -397,7 +397,18 @@ To determine the scaling policy for automatic scaling in Amazon SageMaker, test 
 
 **Designing highly available and fault-tolerant ML architectures**
 
-HERE
+The example below brings together these and some other best practices related to designing highly available and fault-tolerant ML architectures. 
+
+As previously mentioned, you can deploy your Amazon SageMaker-built models to an Amazon SageMaker endpoint. Once created, you need to invoke the endpoint outside the Amazon SageMaker notebook instance with appropriate input (the model signature). These input parameters can be in a file format such as CSV and LIBSVM, as well as an audio, image, or video file. You can use AWS Lambda and Amazon API Gateway to format the input request and invoke the endpoint from the web. 
+
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
++ Amazon Deep Learning containers
++ AWS Deep Learning AMI (Amazon Machine Image)
++ AWS Auto Scaling
++ AWS GPU (P2 and P3) and CPU instances
++ Amazon CloudWatch
++ AWS CloudTrail
 
 ## References:
 
