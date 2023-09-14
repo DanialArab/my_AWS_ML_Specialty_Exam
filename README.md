@@ -486,6 +486,12 @@ AWS KMS gives you centralized control over the encryption keys used to protect y
 
 The attached ML storage volumes are encrypted with the specified key. You can specify an output Amazon S3 bucket for training jobs that is also encrypted with a key managed with AWS KMS, and pass in the KMS key ID for storing the model artifacts in that output S3 bucket.
 
+##### There are two ways to use AWS KMS with Amazon S3
+
+You can protect data at rest in Amazon S3 by using three different modes of server-side encryption:
++ SSE-KMS: requires that AWS manage the data key, but you manage the customer master key in AWS KMS 
++ SSE-C: requires that you manage the encryption key 
++ SSE-S3: requires Amazon S3 to manage the data and master encryption keys 
 
 ## References:
 
