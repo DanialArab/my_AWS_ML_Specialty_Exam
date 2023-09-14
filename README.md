@@ -539,6 +539,11 @@ Topics related to this subdomain: Here are some topics you may want to study for
 + AWS Key Management Service (AWS KMS)
 + AWS Identity and Access Management (IAM)
 
+#### Domain 4.4: Deploy and operationalize ML solutions
+
+
+
+
 ## References:
 
 AWS Certified Machine Learning Specialty 2023 - Hands On!
