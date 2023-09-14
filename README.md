@@ -520,6 +520,24 @@ You can protect data at rest in Amazon S3 by using three different modes of serv
       + Interface endpoint
       + Limit by IPTraining jobs/endpoints
 
++ Compliance programs
+   + PCI DSS
+   + HIPAA-eligible with BAA
+   + ISO
+
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
++ Security on Amazon SageMaker
++ Infrastructure security on Amazon SageMaker
++ What is a:
+
+   + VPC
+   + Security group
+   + NAT gateway
+   + Internet gateway
+   
++ AWS Key Management Service (AWS KMS)
++ AWS Identity and Access Management (IAM)
 
 ## References:
 
