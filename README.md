@@ -575,6 +575,24 @@ You need to provide the endpoint configuration to Amazon SageMaker. The service 
 + Perform ongoing monitoring and evaluation of results. Evaluate the expectations versus the results of the ML system. Build methods to check the error rate and the classes of errors being made against project expectations. If the overall error rate is the same, are the same proportions of the different classes of errors still the same? Is model drift occurring?
 + Create methods to collect data from production inferences that can be used to improve future models. 
 
+###### Amazon SageMaker supports automatic scaling for production variants
+
+Amazon SageMaker supports automatic scaling for production variants. Automatic scaling dynamically adjusts the number of instances provisioned for a production variant in response to changes in your workload. When the workload increases, automatic scaling brings more instances online. When the workload decreases, automatic scaling removes unnecessary instances so that you don't pay for provisioned variant instances that you aren't using.
+
+###### Define and apply a scaling policy that uses Amazon CloudWatch metrics
+
++ Automatic scaling uses the policy to adjust the number of instances up or down in response to actual workloads
++ You can use the AWS Management Console to apply a scaling policy based on a predefined metric
++ A predefined metric is defined in an enumeration so you can specify it by name in code or use it in the console
++ Always load-test your automatic scaling configuration to ensure that it works correctly before using it to manage production traffic
+
+Topics related to this subdomain: Here are some topics you may want to study for more in-depth information related to this subdomain:
+
++ A/B testing with Amazon SageMaker
++ Amazon SageMaker endpoints
+   + Production variants
+   + Endpoint configuration
++ Using Lambda with Amazon SageMaker
 
 ## References:
 
