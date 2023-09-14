@@ -594,12 +594,19 @@ Topics related to this subdomain: Here are some topics you may want to study for
    + Endpoint configuration
 + Using Lambda with Amazon SageMaker
 
-## References:
+### Study Questions
+35 practice questions, will be done later after being done with all the materials. 
 
-AWS Certified Machine Learning Specialty 2023 - Hands On!
+## AWS Certified Machine Learning Specialty 2023 - Hands On!
+
+HERE
+
+## References:
 
 Process Model: CRISP-DM on the AWS Stack (https://explore.skillbuilder.aws/learn/course/external/view/elearning/14575/process-model-crisp-dm-on-the-aws-stack-thai) 
 
-Exam Readiness: AWS Certified Machine Learning - Specialty
+Exam Readiness: AWS Certified Machine Learning - Specialty (https://explore.skillbuilder.aws/learn/course/27/play/54/exam-readiness-aws-certified-machine-learning-specialty)
+
+AWS Certified Machine Learning Specialty 2023 - Hands On!
 
 Exam Prep Official Practice Question Set: AWS Certified Machine Learning - Specialty (MLS-C01 - English)
