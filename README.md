@@ -6,7 +6,7 @@
   
 
 <a name="1"></a>
-## AWS free materials/courses
+## AWS materials/courses
 
 <a name="2"></a>
 ## Process Model: CRISP-DM on the AWS Stack
