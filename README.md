@@ -174,7 +174,7 @@ Use descriptive statistics to better understand your data
 The first thing you should do, before cleaning the data, is to use descriptive statistics to better understand your data. Descriptive statistics help you gain valuable insights into your data so that you can more effectively preprocess the data and prepare it for your ML model. Descriptive statistics can be organized into a couple of different categories. Click on the image below to learn more.
 
 + Overal statistics like the number of rows (examples) and columns (number of features), this info relating to the dimension of data is important, it may indicate you have too many features leading to high dimensionality and poor model performance 
-+ Multivariate statistics
++ Multivariate statistics, mostly have to do with correlations and relationships between attributes 
 + Attribute statistics, specifically for numeric attributes such as mean, standard deviation, variance, min, and max 
 
 
