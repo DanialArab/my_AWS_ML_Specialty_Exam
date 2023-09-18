@@ -608,7 +608,7 @@ Topics related to this subdomain: Here are some topics you may want to study for
 
 ## AWS Certified Machine Learning Specialty 2023 - Hands On!
 
-HERE
+We will kind of see that classification problems tend to be more ubiquitous in the world of machine learning these days. That's because they're a good fit for deep learning. And there are actually ways to take regression problems and model them as classification problems as well that we'll look at later.
 
 ## References:
 
