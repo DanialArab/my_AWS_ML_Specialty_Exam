@@ -1,4 +1,4 @@
-# Exam date: ‎Sunday, November 26, 2023‎
+# Exam date: ‎Sunday, November 26, 2023‎ 
 
 1. [AWS materials/courses](#1)
    1. [Process Model: CRISP-DM on the AWS Stack](#2)
